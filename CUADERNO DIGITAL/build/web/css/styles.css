@@ -1,0 +1,173 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13-jul-2023, 23:41:27
+    Author     : aaron
+*/
+
+/* HEADER */
+.header {
+  background-color: #32CD32;
+  padding: 20px;
+  text-align: center;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+.header a:hover {
+  color: #FFFFFF;
+}
+
+/* CULTIVOS-PARCELAS */
+.detalles-ejecicio {
+  margin-top: 10px;
+}
+
+.cambiar-ejercicios {
+  display: flex;
+  height: 185px;
+  justify-content: space-around;
+}
+
+.elegir-ejercicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 300px;
+  height: 100%;
+}
+
+.Cultivo-Titulo {
+  display: flex;
+  align-items: center;
+  background-color: #32CD32;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.Cultivo {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+}
+
+.Descripcion-Tarjeta {
+  flex: 1;
+  text-align: center;
+  padding: 5px;
+  border-right: 1px solid #ccc;
+  margin-right: 10px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+#Boton-Editar {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+/* PARCELAS */
+
+.parcelas {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.añadir-parcela,
+.eliminar-parcela {
+  width: 45%;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.añadir-parcela h2,
+.eliminar-parcela h2 {
+  margin-top: 0;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="button"] {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background-color: #45a049;
+}
+
+/* AÑOS */
+select {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+/*ESTADISTICAS*/
+/* Estilos para el contenedor principal */
+.elegir-estadisticas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.estadisticas {
+  margin-top: 20px;
+}
+
+.desplegables{
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.listar-ejercicios,
+.listar-propietarios{
+      width: 300px;
+
+}
+
+.boton-estadisticas{
+    width: 100px; 
+}
+
+
+
+

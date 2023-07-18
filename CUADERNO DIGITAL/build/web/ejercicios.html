@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Cuaderno Digital</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <a href="index.html" id="Des"><b>ESTADISTICAS</b></a>
+            <a href="ejercicios.html" id="Des"><b>AÑOS</b></a>
+            <a href="parcelas.html" id="Des"><b>PARCELAS</b></a>
+        </div>
+        <div class="cambiar-ejercicios">
+            <div class="elegir-ejercicio">
+                <h2>ELEGIR AÑO</h2>
+                <div class ="listar-ejercicios"></div>
+
+                <input type='button' value='Elegir' name='ejercicios-elegir' onclick='listarCultivos()'>
+            </div>
+
+            <div class="elegir-ejercicio">
+                <h2>AÑADIR/ELIMINAR AÑO</h2>
+                <div>
+                    <input type="text" id="modificar-ejercicio" name="parcela_id" placeholder="AÑO" required><br>
+                    <div class="botones">
+                        <button class='Descripcion-Tarjeta' id='Boton-Editar' onclick='añadirAño()'>AÑADIR AÑO</button>
+                        <button class='Descripcion-Tarjeta' id='Boton-Editar' onclick='eliminarAño()'>ELIMINAR AÑO</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="detalles-ejecicio">
+            <div class="Cultivo-Titulo">
+                <p class="Descripcion-Tarjeta">Parcela_id</p>
+                <p class="Descripcion-Tarjeta">Nombre</p>
+                <p class="Descripcion-Tarjeta">Poligono</p>
+                <p class="Descripcion-Tarjeta">Parcela</p>
+                <p class="Descripcion-Tarjeta">Superficie</p>
+                <p class="Descripcion-Tarjeta">Cultivo</p>
+                <p class="Descripcion-Tarjeta">Acciones</p>
+            </div>
+
+            <div class="detalles"></div>
+        </div>
+
+
+        <script src="js/funciones.js"></script>
+        <script>
+                            window.onload = function () {
+                                listarEjercicios();
+                                listarCultivos();
+
+
+                            };
+        </script>
+    </body>
+
+</html>
